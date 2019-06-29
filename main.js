@@ -84,14 +84,10 @@ console.log(cursorCheck('Superman is here'))
 
 
 //9
-function firstAndLastToUpper(str) {
-    let firstChar = word.charCodeAt(0);
-    if (firstChar >= 97 && firstChar <= 122) {
-        return String.fromCharCode(firstChar - 32) + word.substr(1);
-    }
-    return word;
+function toUppercase(str) {
+    let res = str.toUpperCase();
+    console.log(res);
 }
-console.log(firstAndLastToUpper('abc'));
 
 
 //10
