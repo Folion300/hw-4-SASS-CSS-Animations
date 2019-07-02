@@ -1,14 +1,14 @@
 //1
 function convert(amount) { 
 	let usd = 8
-	console.log(amount * usd) ;
+	return amount * usd;
 }
 convert(2); 
 
 
 //2
 function reverse(str) {
-    console.log (str.split('').reverse().join(''));
+    return str.split('').reverse().join('');
 }
 reverse('abc');
 
@@ -18,7 +18,7 @@ function showStars(n) {
     for (let row = 1; row <= n; row++) {
         let pattern = '';
         for (let i =0; i < row; i++)
-            pattern+='#';
+            pattern += '#';
         console.log(pattern);
     }
 }
@@ -27,7 +27,7 @@ showStars(5);
 
 //4
 let rangeSum = function(start,end) {
-    let arr = [];
+    const arr = [];
     for (let i = start; i <= end; i++) 
         arr.push(i);
     return arr.reduce(function(a,b){
@@ -40,7 +40,7 @@ console.log(rangeSum(-1,3))
 
 //5
 function min(a, b, c) { 
-    console.log(Math.min(a,b,c));
+    return Math.min(a,b,c);
     }
 min(10, 5, 11) 
 min(3, 8, 4)
@@ -86,7 +86,7 @@ console.log(cursorCheck('Superman is here'))
 //9
 function toUppercase(str) {
     let res = str.toUpperCase();
-    console.log(res);
+    return res;
 }
 
 
