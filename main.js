@@ -3,7 +3,6 @@ function convert(amount) {
 	let usd = 8
 	return amount * usd;
 }
-convert(2); 
 
 
 //2
