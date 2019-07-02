@@ -3,13 +3,14 @@ function convert(amount) {
 	let usd = 8
 	return amount * usd;
 }
+console.log (convert (2)) 
 
 
 //2
 function reverse(str) {
-    return str.split('').reverse().join('');
+    return (str.split('').reverse().join(''));
 }
-reverse('abc');
+console.log (reverse('abc'));
 
 
 //3
@@ -17,7 +18,7 @@ function showStars(n) {
     for (let row = 1; row <= n; row++) {
         let pattern = '';
         for (let i =0; i < row; i++)
-            pattern += '#';
+            pattern+='#';
         console.log(pattern);
     }
 }
@@ -41,8 +42,8 @@ console.log(rangeSum(-1,3))
 function min(a, b, c) { 
     return Math.min(a,b,c);
     }
-min(10, 5, 11) 
-min(3, 8, 4)
+console.log (min(10, 5, 11)); 
+console.log (min(3, 8, 4));
 
 
 //6
@@ -87,7 +88,7 @@ function toUppercase(str) {
     let res = str.toUpperCase();
     return res;
 }
-
+console.log(toUppercase('asdlaksjd'))
 
 //10
 function removeDuplicateCharacters(str) {
