@@ -1,6 +1,6 @@
 //1
 function convert(amount) { 
-	let usd = 8
+	const usdRate = 8;
 	return amount * usd;
 }
 console.log (convert (2)) 
