@@ -85,10 +85,14 @@ console.log(cursorCheck('Superman is here'))
 
 //9
 function toUppercase(str) {
-    let res = str.toUpperCase();
-    return res;
+  let result = "";
+  for(i = 0; i < str.length; i++) {
+    result += String.fromCharCode(str.charCodeAt(i) & 223);
+  }
+  return result;
 }
-console.log(toUppercase('asdlaksjd'))
+console.log(toUppercase("asdlaksjd"));
+
 
 //10
 function removeDuplicateCharacters(str) {
